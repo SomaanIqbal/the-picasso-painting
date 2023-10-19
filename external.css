@@ -1,0 +1,82 @@
+.picasso {
+    background-color: antiquewhite;
+}
+
+.one {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+.two {
+    width: 500px;
+    height: 500px;
+    background-color: darkgray;
+    border-radius: 50%;
+    position: relative;
+    bottom: 100px;
+    left: 250px;
+
+}
+
+.three {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    position: relative;
+    left: 500 px;
+    margin-left: 4px;
+    z-index: 1;
+
+}
+
+section {
+    display: flex;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .squares {
+        background-color: blueviolet;
+        
+    }
+    .one {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+
+    .two {
+        width: 200px;
+        height: 200px;
+        background-color: darkgray;
+        border-radius: 50%;
+        position: relative;
+        bottom: 100px;
+        left: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    .squares {
+        background-color: blueviolet;
+        
+    }
+    .one {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+
+    .two {
+        width: 200px;
+        height: 200px;
+        background-color: darkgray;
+        border-radius: 50%;
+        position: relative;
+        bottom: 100px;
+        left: 250px;
+    }
+}
