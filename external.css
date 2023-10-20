@@ -1,82 +1,110 @@
-.picasso {
+.form {
+    margin-top: 30%;
+    text-align: center;
     background-color: antiquewhite;
-}
-
-.one {
-    width: 500px;
-    height: 500px;
-    background-color: blue;
-}
-
-.two {
-    width: 500px;
-    height: 500px;
-    background-color: darkgray;
-    border-radius: 50%;
-    position: relative;
-    bottom: 100px;
-    left: 250px;
 
 }
 
-.three {
-    width: 500px;
-    height: 500px;
-    background-color: blue;
-    position: relative;
-    left: 500 px;
-    margin-left: 4px;
-    z-index: 1;
-
+body {
+    background-color: antiquewhite;
+    margin-top: 25%;
 }
 
-section {
+.picasso {
     display: flex;
+}
+
+/* ------------------------------------------------------ */
+
+/* House */
+.house {
+    width: 500px;
+    height: 500px;
+    background-color: brown;
 
 }
 
+.door {
+    width: 100px;
+    height: 150px;
+    background-color: darkgray;
+    position: relative;
+    bottom: 150px;
+    left: 220px;
+}
 
+.window {
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    background-color: antiquewhite;
+    margin: 50px;
+}
+
+.bothWindows {
+    position: relative;
+    display: flex;
+    bottom: 650px;
+    left: 50px;
+}
+
+/* ------------------------------------------------------ */
+
+/* SNOW MAN */
+.snowMan {
+    margin-top: 180px;
+}
+
+.smallCircle {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: black;
+    margin-left: -12.5px;
+}
+
+.mediumCircle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: black;
+    margin-left: -25px;
+
+}
+
+.bigCircle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: black;
+    margin-left: -50px;
+}
+
+.iceBlocks {
+    display: flex;
+}
+
+.block {
+    height: 5em;
+    width: 5em;
+    background-color: aqua;
+    margin: 2px;
+    margin-top: 450px;
+}
+
+/* ---------------------------------------------------- */
 
 @media (max-width: 768px) {
     .squares {
         background-color: blueviolet;
-        
-    }
-    .one {
-        width: 200px;
-        height: 200px;
-        background-color: green;
-    }
-
-    .two {
-        width: 200px;
-        height: 200px;
-        background-color: darkgray;
-        border-radius: 50%;
-        position: relative;
-        bottom: 100px;
-        left: 250px;
     }
 }
 
 @media (max-width: 320px) {
     .squares {
-        background-color: blueviolet;
-        
-    }
-    .one {
-        width: 200px;
-        height: 200px;
-        background-color: green;
-    }
-
-    .two {
-        width: 200px;
-        height: 200px;
-        background-color: darkgray;
-        border-radius: 50%;
-        position: relative;
-        bottom: 100px;
-        left: 250px;
+        background-color: orange;
     }
 }
