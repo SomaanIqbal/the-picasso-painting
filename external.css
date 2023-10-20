@@ -12,12 +12,14 @@ body {
 
 .picasso {
     display: flex;
+
 }
 
 /* ------------------------------------------------------ */
 
 /* House */
-.house {
+
+.houseSquare {
     width: 500px;
     height: 500px;
     background-color: brown;
@@ -31,12 +33,22 @@ body {
     position: relative;
     bottom: 150px;
     left: 220px;
+
 }
+.snow {
+    width: 500px;
+    height:50px;
+    background-color:aliceblue;
+    position: relative;
+    bottom: 170px;
+    z-index: -1;
+}
+
+
 
 .window {
     height: 100px;
     width: 100px;
-    z-index: 2;
     background-color: antiquewhite;
     margin: 50px;
 }
@@ -59,7 +71,6 @@ body {
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    z-index: 1;
     background-color: black;
     margin-left: -12.5px;
 }
@@ -68,7 +79,6 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    z-index: 1;
     background-color: black;
     margin-left: -25px;
 
@@ -78,13 +88,14 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    z-index: 1;
     background-color: black;
     margin-left: -50px;
 }
 
 .iceBlocks {
     display: flex;
+    padding: 1px 1px 1px 1px;
+
 }
 
 .block {
@@ -93,18 +104,31 @@ body {
     background-color: aqua;
     margin: 2px;
     margin-top: 450px;
+    
+}
+.block:nth-child(even){
+    background-color:darkturquoise;
 }
 
 /* ---------------------------------------------------- */
 
 @media (max-width: 768px) {
-    .squares {
-        background-color: blueviolet;
+    .iceBlocks {
+        flex-direction: column;
+    }
+
+    .block {
+        margin-top: 0;
     }
 }
 
 @media (max-width: 320px) {
-    .squares {
-        background-color: orange;
+
+    .house {
+        width: 300px;
     }
+    .door {
+        left:100px;
+    }
+
 }
